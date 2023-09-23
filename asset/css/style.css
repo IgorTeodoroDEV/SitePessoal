@@ -178,6 +178,7 @@ p{
     border-radius: 1rem;
 }
 .photo-me-view{
+    margin-bottom: 1rem;
     width: auto;
 }
 .photo-me-head > h2{
