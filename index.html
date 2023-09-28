@@ -15,7 +15,7 @@
 <body>
   <!-- Navbar -->
   <div class="container-fluid reset-pad">
-    <div class="top-apresentacao position-relative reset-pad">
+    <div class="top-apresentacao position-relative reset-pad" id="1">
       <div class="nav position-fixed justify-content-center reset-pad">
         <nav class="navbar navbar-expand-lg navbar-light">
           <!-- Botão de alternância para telas pequenas -->
@@ -27,16 +27,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Início</a>
+                <a class="nav-link" href="#1">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
+                <a class="nav-link" href="#2">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Fotos</a>
+                <a class="nav-link" href="#3">Musicas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#4">Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#5">Academico</a>
               </li>
             </ul>
           </div>
@@ -45,6 +48,23 @@
       <!---------------------------------------------- -->
       <div class="name position-absolute">
         <h1>Igor Altafini Teodoro</h1>
+        <div class="icon-rede dysplay-flex">
+          <a href="https://www.instagram.com/_igorteodoro_/">
+            <img src="asset/icon/instagram.svg" alt="instagram">
+          </a>
+          <a href="https://www.facebook.com/igor.teodoro.9235">
+            <img src="asset/icon/facebook.svg" alt="instagram">
+          </a>
+          <a href="https://wa.me/5519997813160">
+            <img src="asset/icon/whatsapp.svg" alt="instagram">
+          </a>
+          <a href="https://github.com/IgorTeodoroDEV">
+            <img src="asset/icon/github.svg" alt="instagram">
+          </a>
+          <a href="https://www.linkedin.com/in/igor-teodoro-96a740227/">
+            <img src="asset/icon/linkedin.svg" alt="instagram">
+          </a>
+        </div>
       </div>
       <div class="banner ">
         <img src="asset/img/banner.jpg" class="img-fluid">
@@ -53,7 +73,8 @@
           
         </div> -->
     </div>
-    <div class="about-me">
+    <div class="about-me" id="2">
+      <h2>Sobre mim</h2>
       <div class="row reset-pad">
         <div class="about col-md-3">
           <p>Olá, Meu nome completo é igor Altafini Teodoro tenho 19 anos, nascido data 24/09/2003 no estado de são
@@ -70,7 +91,7 @@
         </div>
       </div>
     </div>
-    <div class="music">
+    <div class="music" id="3">
       <div class="music-head">
         <img src="asset/icon/spotify.svg" alt="spotify">
         <h2># Musicas escutadas na semana</h2>
@@ -81,35 +102,36 @@
           <div class="font-Spotify col-md-7">
             <p>Titulo</p>
           </div>
-          <div class="font-Spotify col-md-4">
+          <div class="font-Spotify col-md-4 oculto">
             <p>Duração</p>
           </div>
         </div>
+        <!-------------------musica1--------------------- -->
         <div class="music-hover">
           <div class="row">
             <div class="music-spotify col-md-1">
               <p>1</p>
             </div>
             <div class="music-spotify col-md-7">
-              <h5>Chosen</h5>
-              <p>Måneskin</p>
+              <h5>Ela chorou de amor</h5>
+              <p>Gino & Geno</p>
             </div>
-            <div class="music-spotify col-md-4">
-              <p>2:42</p>
+            <div class="music-spotify col-md-4 oculto">
+              <p>3:39</p>
             </div>
           </div>
         </div>
-        <!-- -----------------musica2--------------------- -->
+        <!-------------------musica2------------------------>
         <div class="music-hover">
           <div class="row">
             <div class="music-spotify col-md-1">
-              <p>1</p>
+              <p>2</p>
             </div>
             <div class="music-spotify col-md-7">
               <h5>Chosen</h5>
               <p>Måneskin</p>
             </div>
-            <div class="music-spotify col-md-4">
+            <div class="music-spotify col-md-4 oculto">
               <p>2:42</p>
             </div>
           </div>
@@ -118,47 +140,70 @@
         <div class="music-hover">
           <div class="row">
             <div class="music-spotify col-md-1">
-              <p>1</p>
+              <p>3</p>
             </div>
             <div class="music-spotify col-md-7">
-              <h5>Chosen</h5>
-              <p>Måneskin</p>
+              <h5>So um pagode</h5>
+              <p>Turma do pagode</p>
             </div>
-            <div class="music-spotify col-md-4">
-              <p>2:42</p>
+            <div class="music-spotify col-md-4 oculto">
+              <p>2:21</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- -----------------------------------FOTO----------------------- -->
-  <div class="photo-me">
-    <div class="photo-me-head">
-      <div class="photo-title">
-        <h2>Principais fotos</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-3 photo-me-view totvs">
-          <img src="asset/img/totvs.jpg" alt="photo1">
+    <!-- -----------------------------------FOTO----------------------- -->
+    <div class="photo-me" id="4">
+      <div class="photo-me-head">
+        <div class="photo-title">
+          <h2>Principais fotos</h2>
         </div>
-        <div class="col-md-3 photo-me-view totvs">
-          <img src="asset/img/autorama.jpg" alt="photo1">
-        </div>
-        <div class="col-md-3 photo-me-view  totvs">
-          <img src="asset/img/Fabrica de humber.jpeg" alt="photo1">
-        </div>
-        <div class="col-md-3 photo-me-view">
-          <img src="asset/img/braek-coffe.jpg" alt="photo1">
-        </div>
-        <div class="col-md-3 photo-me-view">
-          <img src="asset/img/festajulina.jpeg" alt="photo1">
+        <div class="row">
+          <div class="col-md-3 photo-me-view">
+            <img src="asset/img/familia.jpg" alt="photo1">
+          </div>
+          <div class="col-md-3 photo-me-view totvs">
+            <img src="asset/img/totvs.jpg" alt="photo1">
+          </div>
+          <div class="col-md-3 photo-me-view totvs">
+            <img src="asset/img/autorama.jpg" alt="photo1">
+          </div>
+          <div class="col-md-3 photo-me-view  totvs">
+            <img src="asset/img/Fabrica de humber.jpeg" alt="photo1">
+          </div>
+          <div class="col-md-3 photo-me-view">
+            <img src="asset/img/braek-coffe.jpg" alt="photo1">
+          </div>
+          <div class="col-md-3 photo-me-view">
+            <img src="asset/img/amigos.jpg" alt="photo1">
+          </div>
+          <div class="col-md-3 photo-me-view">
+            <img src="asset/img/festajulina.jpeg" alt="photo1">
+          </div>
+          <div class="col-md-3 photo-me-view">
+            <img src="asset/img/kaquei.jpg" alt="photo1">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="line-time">
-    
+    <div class="timeline" id="5">
+      <div class="event-title">
+        <h2>Linha do tempo academico</h2>
+      </div>
+      <div class="event">
+        <div class="event-date">2019 - 2021</div>
+        <div class="event-description">Etec: Desenvolvimento de sistemas integrado ao Ensino Medio</div>
+      </div>
+      <div class="event">
+        <div class="event-date">2022 - cursando</div>
+        <div class="event-description">Fatec: Desenvolvimento de Sistema MultiPlataforma</div>
+      </div>
+      <div class="event">
+        <div class="event-date">2023 - cursando</div>
+        <div class="event-description">CNA: Inglês</div>
+      </div>
+    </div>
   </div>
   </div>
   <footer>

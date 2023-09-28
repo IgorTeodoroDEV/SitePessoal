@@ -18,6 +18,9 @@ p{
 .reset-margin-bottom{
     margin: 0px;
 }
+a{
+    text-decoration: none;
+}
 /* ------------------MENU----------------------------- */
 .navbar a{
     font-family: Arial, Helvetica, sans-serif;
@@ -39,6 +42,18 @@ p{
     margin: 0;
     padding: 0;
     z-index: 2;
+}
+.navbar-nav{
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 0 0rem 1rem 1rem;
+}
+.icon-rede img{
+    width: 25px;
+    height: 25px;
+    margin-left: 1rem;
+}
+.icon-rede{
+    margin-bottom: 1rem ;
 }
 /* ------------------------NAME AND BANNER--------------------- */
 .banner{
@@ -69,14 +84,11 @@ p{
     width: 100%;
     justify-items: center;
 }
-.ondas{
-    position: relative;
-}
 /* ------------------------about------------------------------------------ */
 
 .about-me{
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding-left: 25%;
 }
 .about-me > h1{
@@ -171,7 +183,6 @@ p{
     background-color: #363636;
 }
 .music-hover :hover{
-    cursor: pointer;
     background-color: #363636;
     border-radius: 1rem;
 }
@@ -239,3 +250,82 @@ footer p{
 .lingua-program > img{
     width: 150px;
 }
+
+/* -----------------------Linha do tempo -------------------------------------------- */
+
+.timeline {
+    max-width: auto;
+    margin: 20px 1rem;
+    padding: 20px;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.event-date {
+    flex: 1;
+    text-align: center;
+    background-color: #363636;
+    color: #fff;
+    padding: 10px;
+    border-radius: 1rem 0rem 0rem 0;
+}
+
+.event-description {
+    flex: 4;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 0rem 0rem 1rem 0rem;
+}
+
+.event-title{
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 412px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+    }
+    .photo img{
+        background-image: url(https://i.pinimg.com/564x/ae/a8/09/aea809f2ebb9c212409685baa6c72e81.jpg);
+    }
+    .about-me{
+        margin: 1rem;
+        padding: 0px;
+    }
+    .about{
+        text-align: justify;
+    }
+    .about p{
+        font-family: 9pt;
+        margin-top: 0px;
+    }
+    .oculto{
+        display: none;
+    }
+    .row{
+        display: flex;
+    }
+    .music-spotify{
+        width: auto;
+    }
+    .font-Spotify{
+        width: auto;
+    }
+    .music-head h2{
+        margin: 0px;
+        margin-left: 0px;
+    }
+    .photo-me-view img{
+        max-width: 100%;
+    }
+  }
