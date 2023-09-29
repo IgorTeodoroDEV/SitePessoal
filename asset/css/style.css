@@ -321,11 +321,20 @@ footer p{
     .font-Spotify{
         width: auto;
     }
-    .music-head h2{
-        margin: 0px;
-        margin-left: 0px;
+    .music> .music-head > h2{
+        font-size: 16pt;
+
     }
     .photo-me-view img{
         max-width: 100%;
     }
+    .about-me-infos{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   .photo{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   }
   }
